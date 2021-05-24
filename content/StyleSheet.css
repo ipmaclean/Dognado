@@ -1,0 +1,105 @@
+﻿body {
+    background-color: #3AAFA9;
+    font-family: 'Architects Daughter', cursive;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#title {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+#image-tornado {
+    width: auto;
+    height: 250px;
+}
+
+#random-pics-button {
+    font-size: 2.5rem;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+}
+
+#title:hover  #random-pics-button{
+    animation-name: rotate;
+    animation-duration: 0.5s;
+}
+
+@keyframes rotate {
+    0%     {transform: rotateY(0);}
+    25%    {transform: rotateY(180deg);}
+    50%    {transform: rotateY(360deg);}
+    75%    {transform: rotateY(180deg);}
+    100%   {transform: rotateY(360deg);}
+
+}
+
+#random-pics-list {
+    text-align: center;
+    overflow: hidden;
+}
+
+#random-pics-list img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 10px;
+    border: 1px solid #2B7A78;
+    box-shadow: #2B7A78 10px 10px 5px;
+}
+
+footer {
+    background-color: black;
+    color: #f7f7f7;
+    text-align: center;
+    font-size: 0.65rem;
+    padding: 5px 0px 5px 0px;
+    border: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.red-text {
+    color: red;
+}
+
+@media screen and (max-width: 576px) {
+    #header {
+        display: grid;
+        text-align: center;
+    }
+
+    #title {
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        margin-bottom: 30px;
+    }
+
+    #image-tornado {
+        width: auto;
+        height: 250px;
+        margin-bottom: 30px;
+        margin-top: 5px;
+    }
+
+    #random-pics-button {
+        font-size: 2.5rem;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        border: 2px solid black;
+    }
+}
